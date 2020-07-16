@@ -121,8 +121,8 @@ public class Utils {
                     }
                 }
             }
-        } catch (Exception ignored) { } // for now eat exceptions
-        return "";
+        } catch (Exception ignored) { return "offline";} // for now eat exceptions
+        return "offline";
     }
 
 }

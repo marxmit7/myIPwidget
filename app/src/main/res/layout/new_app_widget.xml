@@ -13,7 +13,7 @@
         android:contentDescription="@string/appwidget_text"
         android:text="@string/appwidget_text"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold|italic" />
 
 </LinearLayout>

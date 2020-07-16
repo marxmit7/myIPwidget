@@ -62,7 +62,14 @@ public class NewAppWidget extends AppWidgetProvider {
     }
 
     private void getIp() {
-        ipAdd=Utils.getIPAddress(true);
+        try{
+            ipAdd=Utils.getIPAddress(true);
+        }
+        catch (Exception e)
+        {
+            ipAdd = "offline";
+            e.printStackTrace();
+        }
 
         Log.i("ip: ", "" + ipAdd );
     }
